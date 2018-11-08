@@ -1,10 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true"  CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<%@ Register Assembly="DevExpress.Web.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxTimer" TagPrefix="dxt" %>
-<%@ Register Assembly="DevExpress.XtraCharts.v8.3.Web, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.XtraCharts.v13.1.Web, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.XtraCharts.Web" TagPrefix="dxchartsui" %>
-<%@ Register Assembly="DevExpress.XtraCharts.v8.3, Version=8.3.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.XtraCharts.v13.1, Version=13.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.XtraCharts" TagPrefix="cc1" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -17,32 +17,51 @@
     <form id="form1" runat="server">
     <div style="text-align:center">
         &nbsp;
-        <dxchartsui:WebChartControl ID="WebChartControl1" runat="server" Height="310px" Width="1009px" ClientInstanceName="chart" DiagramTypeName="XYDiagram" OnCustomCallback="WebChartControl1_CustomCallback" ShowLoadingPanel="False">
-            <SeriesTemplate LabelTypeName="SideBySideBarSeriesLabel" PointOptionsTypeName="PointOptions"
-                SeriesViewTypeName="SideBySideBarSeriesView">
-                <View HiddenSerializableString="to be serialized">
-                </View>
-                <Label HiddenSerializableString="to be serialized" LineVisible="True">
-                </Label>
-                <PointOptions HiddenSerializableString="to be serialized">
-                </PointOptions>
-                <LegendPointOptions HiddenSerializableString="to be serialized">
-                </LegendPointOptions>
+        <dxchartsui:WebChartControl ID="WebChartControl1" runat="server" Height="310px" Width="1009px" ClientInstanceName="chart"  OnCustomCallback="WebChartControl1_CustomCallback" ShowLoadingPanel="False">
+            <SeriesTemplate  
+                >
+                <ViewSerializable>
+<cc1:SideBySideBarSeriesView HiddenSerializableString="to be serialized">
+                </cc1:SideBySideBarSeriesView>
+</ViewSerializable>
+                <LabelSerializable>
+<cc1:SideBySideBarSeriesLabel HiddenSerializableString="to be serialized" LineVisible="True">
+                </cc1:SideBySideBarSeriesLabel>
+</LabelSerializable>
+                <PointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized">
+                </cc1:PointOptions>
+</PointOptionsSerializable>
+                <LegendPointOptionsSerializable>
+<cc1:PointOptions HiddenSerializableString="to be serialized">
+                </cc1:PointOptions>
+</LegendPointOptionsSerializable>
             </SeriesTemplate>
-            <FillStyle FillOptionsTypeName="SolidFillOptions">
-                <Options HiddenSerializableString="to be serialized" />
+            <FillStyle >
+                <OptionsSerializable>
+<cc1:SolidFillOptions HiddenSerializableString="to be serialized" />
+</OptionsSerializable>
             </FillStyle>
             <SeriesSerializable>
-                <cc1:Series ArgumentScaleType="DateTime" LabelTypeName="PointSeriesLabel" Name="Series 1"
-                    PointOptionsTypeName="PointOptions" SeriesViewTypeName="AreaSeriesView" LegendText="Trend">
-                    <view hiddenserializablestring="to be serialized"></view>
-                    <label hiddenserializablestring="to be serialized" linevisible="True">
-                    </label>
-                    <pointoptions hiddenserializablestring="to be serialized"></pointoptions>
-                    <legendpointoptions hiddenserializablestring="to be serialized"></legendpointoptions>
+                <cc1:Series ArgumentScaleType="DateTime"  Name="Series 1"
+                      LegendText="Trend">
+                    <ViewSerializable>
+<cc1:AreaSeriesView hiddenserializablestring="to be serialized"></cc1:AreaSeriesView>
+</ViewSerializable>
+                    <LabelSerializable>
+<cc1:PointSeriesLabel hiddenserializablestring="to be serialized" linevisible="True">
+                    </cc1:PointSeriesLabel>
+</LabelSerializable>
+                    <PointOptionsSerializable>
+<cc1:PointOptions hiddenserializablestring="to be serialized"></cc1:PointOptions>
+</PointOptionsSerializable>
+                    <LegendPointOptionsSerializable>
+<cc1:PointOptions hiddenserializablestring="to be serialized"></cc1:PointOptions>
+</LegendPointOptionsSerializable>
                 </cc1:Series>
             </SeriesSerializable>
-            <Diagram>
+            <DiagramSerializable>
+<cc1:XYDiagram>
                 <axisx visibleinpanesserializable="-1">
 <Range SideMarginsEnabled="False"></Range>
 
@@ -51,7 +70,8 @@
                 <axisy visibleinpanesserializable="-1">
 <Range SideMarginsEnabled="True"></Range>
 </axisy>
-            </Diagram>
+            </cc1:XYDiagram>
+</DiagramSerializable>
             <Titles>
                 <cc1:ChartTitle Text="Title">
                 </cc1:ChartTitle>
