@@ -14,6 +14,8 @@ This example shows how to use callbacks to update a WebChartControl dynamically.
 
 ![A real-time chart](media/resulting-chart.gif)
 
+In this example, the [ASPxTimer.Tick](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxTimer.Tick) event occurs once a second (the timer's [Interval](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxTimer.Interval) property value is equal to 1000 milliseconds). In the **ASPxTimer.Tick** event handler, the example calls the chart's [PerformCallback](https://docs.devexpress.com/AspNet/js-ASPxClientWebChartControl.PerformCallback(args)?p=netframework) that raises the [CustomCallback](https://docs.devexpress.com/AspNet/DevExpress.XtraCharts.Web.WebChartControl.CustomCallback?p=netframework) event. In the **CustomCallback** event handler, new points are generated and added to the chart.
+
 ## Files to Look At
 
 * [Default.aspx](./CS/WebSite/Default.aspx) (VB: [Default.aspx](./VB/WebSite/Default.aspx))
