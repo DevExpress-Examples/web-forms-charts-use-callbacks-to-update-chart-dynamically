@@ -11,7 +11,7 @@
 <!-- default file list end -->
 # How to use callbacks to update a WebChartControl dynamically
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e1070/)**
+**[[Run Online]](https://codecentral.devexpress.com/128575867/)**
 <!-- run online end -->
 
 
