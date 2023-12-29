@@ -6,9 +6,6 @@
 
 # Chart for Web Forms - How to Use Callbacks to Update a WebChartControl Dynamically
 
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128575867/)**
-<!-- run online end -->
 
 This example shows how to use callbacks to update a WebChartControl dynamically.
 
