@@ -30,7 +30,7 @@ In this example, the [ASPxTimer.Tick](https://docs.devexpress.com/AspNet/DevExpr
 * [How to: Bind a Web Chart to Data (Runtime Sample)](https://docs.devexpress.com/AspNet/4779/components/chart-control/examples/how-to-bind-a-web-chart-to-data-runtime-sample)
 * [How to: Bind an Individual Series to a Data Source (Runtime Sample)](https://docs.devexpress.com/AspNet/120176/components/chart-control/examples/how-to-bind-an-individual-series-to-a-data-source-runtime-sample)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=web-forms-charts-use-callbacks-to-update-chart-dynamically&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=web-forms-charts-use-callbacks-to-update-chart-dynamically&~~~was_helpful=no)
 
